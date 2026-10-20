@@ -300,3 +300,29 @@ button.btn-primary {
 @media (max-width: 768px) {
     .app-layout { grid-template-columns: 1fr; }
 }
+
+.back-link {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 0px;
+    color: #818cf8;
+    text-decoration: none;
+    font-weight: 600;
+    
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+.back-link::before {
+  content: "← "; 
+  margin-right: 6px; 
+  display: inline-block;
+  transition: transform 0.2s ease; 
+}
+
+
+.back-link:hover::before {
+  transform: translateX(-4px); 
+}
+
